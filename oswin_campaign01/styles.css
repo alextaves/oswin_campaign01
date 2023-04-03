@@ -1,0 +1,164 @@
+body{
+  font-family: helvetica, arial, san-serif;
+  line-height: normal;
+}
+
+
+.super-container{
+  background-color: fff;
+  height: 100vh;
+ 
+}
+
+body{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.section2{
+  margin-top: 15px;
+  background-color:#03133c;
+  height: 85vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* min-height: 400px; */
+}
+
+.section2 div h1{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22vw;
+  letter-spacing: 1.25rem;
+  line-height: 75%;
+}
+
+.section2 div h2{
+  margin-top: 0;
+  text-align: center;
+  font-size: 2vw;
+  line-height: 90%;
+  letter-spacing: .5rem;
+}
+
+.section2 div p{
+  text-align: center;
+  font-size: 1.5vw;
+  letter-spacing: .5rem;
+  line-height: 2.5;
+  font-weight: bolder;
+  line-height: 90%;
+  margin-top: 20px;
+  
+}
+
+p .on:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.onClick{
+  color: red;
+}
+
+
+
+
+
+.off{
+  color: white
+}
+
+.section3{
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: auto;
+  /* min-height: 400px; */
+}
+
+video{
+  width: 100%;
+  height: auto;
+}
+
+.section4{
+  margin-top: 15px;
+  background-color: rgb(9, 9, 9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* min-height: 400px; */
+}
+
+.section4 ul li{
+  font-size: 4rem;
+  color: #fff;
+  margin: 25px 0 0 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: .25rem;
+}
+
+#landscape-message {
+  /* Hide the message by default */
+ display: none;
+ position: fixed;;
+ top: 25px;
+ left: 20px;
+ right: 0;
+ bottom: 0;
+ background-color: #070707;
+ text-align: left;
+ font-size: 3rem;
+ color: white;
+ padding-top: 100%;
+ transform: translateY(-40%);
+ line-height: 5rem;
+ letter-spacing: .5rem;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles to be applied when in portrait mode on phones */
+  .super-container {
+    display: none /* Prevent scrolling */
+  }
+  body{
+    background-color: black;
+  }
+  #landscape-message {
+    display: block; /* Show the message */
+  }
+
+  
+}
+
+
+
+
+@media (orientation: landscape) {
+  /* Styles to be applied when in landscape mode */
+} 
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  /* Styles to be applied when in landscape mode on phones */
+  .section4 ul li{
+    font-size: 2rem;
+    color: #fff;
+    margin: 25px 0 0 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  /* Styles to be applied when in landscape mode on tablets */
+}
+
